@@ -1,4 +1,4 @@
-from flask import render_template, Blueprint, request
+from flask import render_template, Blueprint, request, jsonify
 from model import predict
 
 blueprint = Blueprint('pages', __name__)
@@ -19,8 +19,10 @@ def cheat_model():
         sentence = request.args.get('sentence')
 
     # Pass the sentence to the example function
-    result = predict(sentence)
+    print(sentence)
+    result = predict(str(sentence))
+    print(result)
 
-    return result
+    return [result]
 
  

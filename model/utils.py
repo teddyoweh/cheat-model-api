@@ -1,5 +1,5 @@
 import pandas as pd
-import pickle
+import pickle5 as pickle
 import re, string
 import nltk
 from nltk.tokenize import word_tokenize

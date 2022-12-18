@@ -6,3 +6,4 @@ nltk
 scikit-learn
 gensim
 pandas
+pickle
